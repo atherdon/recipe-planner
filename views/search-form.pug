@@ -1,8 +1,9 @@
+extends layout
 
-<div layout="column" style="min-height:100%">
-<div layout="row" layout-align="center center" layout-margin>
-<div layout="column" flex="80" flex-xs="95" class="content-background" class="md-whiteframe-4dp" >
-<div layout="row"  layout-align="center start" layout-padding>
+block content
+  h1= title
+  p Welcome to #{title}
+
 
   <div layout="row" layout-wrap flex="100">
         
@@ -209,18 +210,3 @@
 
     
 </div>
-   
-</div>
-<div layout="row" layout-align="center start" style="font-size:0.8em; color:grey">
-    *All fields are optional fill according to your requirment
-</div>
-<div layout="row" layout-align="center end" >
-    <md-button ng-click="recipeQuery()" class="md-warn md-raised" layout="row" layout-align="center center">
-    <md-icon md-svg-src="../images/ic_search_white_24px.svg" aria-label="search"></md-icon>Search Recipes</md-button>
-</div>
-   
-</div>    
-</div>
-
-</div>
-<div data-ng-include="'views/footer.html'" flex></div>
